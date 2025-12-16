@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Esto convierte el '&' y los espacios en códigos seguros que no rompen el link
       const encodedText = encodeURIComponent(text);
 
-      window.open(`https://wa.me/5493471560422?text=${encodedText}`, '_blank');
+      window.open(`https://wa.me/5493476616820?text=${encodedText}`, '_blank');
     });
 
     // Iniciar wizard
