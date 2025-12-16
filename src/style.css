@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body text-brand-black antialiased bg-gray-50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+/* --- ANIMACIONES PERSONALIZADAS (AJUSTADAS: MÁS LENTAS) --- */
+
+.reveal-element {
+  opacity: 0;
+  transform: translateY(40px); /* Un poco más de distancia para que el viaje sea más notorio */
+  /* Duración aumentada a 1.5s para mayor elegancia */
+  transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+  will-change: opacity, transform;
+}
+
+.reveal-element.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide Left/Right variants - También ralentizadas */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-left.active, .reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --- DELAYS AJUSTADOS --- */
+/* Al ser la animación más lenta, aumentamos el tiempo entre cada elemento */
+.delay-100 { transition-delay: 200ms; }
+.delay-200 { transition-delay: 500ms; }
+.delay-300 { transition-delay: 800ms; }
