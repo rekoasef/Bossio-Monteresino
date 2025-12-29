@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Quiénes Somos | Bossio & Monteresino</title>
+  <meta name="description" content="Historia y trayectoria del estudio jurídico Bossio & Monteresino." />
+
+  <link rel="icon" type="image/png" href="/logoNavegador.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "brand-black": "#0f0f0f",
+            "brand-orange": "#f59e0b",
+            "brand-gray": "#333333",
+          },
+          fontFamily: {
+            heading: ["Playfair Display", "serif"],
+            sans: ["Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    
+    .reveal-element {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-out;
+    }
+    .reveal-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+  <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-4 bg-brand-black/95 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="logo.png" alt="Bossio & Monteresino" class="h-12 md:h-16 w-auto object-contain">
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-medium text-white">
+        <a href="index.html" class="hover:text-brand-orange transition-colors">Inicio</a>
+        <a href="index.html#enfoque" class="hover:text-brand-orange transition-colors">Enfoque</a>
+        <a href="index.html#metodo" class="hover:text-brand-orange transition-colors">Método</a>
+        <a href="index.html#contacto" class="px-6 py-2 border border-white rounded hover:bg-white hover:text-brand-black transition-all">
+          Solicitar Diagnóstico
+        </a>
+      </div>
+
+      <button id="menu-btn" class="md:hidden text-white text-3xl">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-brand-black border-t border-gray-800 p-6 flex flex-col space-y-4 shadow-xl">
+      <a href="index.html" class="text-white text-lg font-medium hover:text-brand-orange">Inicio</a>
+      <a href="index.html#enfoque" class="text-white text-lg font-medium hover:text-brand-orange">Enfoque</a>
+      <a href="index.html#contacto" class="text-brand-orange text-lg font-bold">Solicitar Diagnóstico</a>
+    </div>
+  </nav>
+
+  <header class="relative h-[60vh] min-h-[500px] flex items-center justify-center text-center bg-brand-black">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1920&auto=format&fit=crop"
+           class="w-full h-full object-cover opacity-40" alt="Oficina">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-black/60"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl px-6 pt-20">
+      <span class="inline-block mb-6 px-4 py-1.5 text-xs font-bold tracking-[0.2em] uppercase border border-brand-orange text-brand-orange rounded bg-black/50 backdrop-blur-sm reveal-element">
+        Nuestra Esencia
+      </span>
+      <h1 class="text-5xl md:text-7xl font-heading text-white mb-6 leading-tight reveal-element delay-100">
+        Historia y <span class="text-brand-orange italic">Trayectoria</span>
+      </h1>
+      <div class="w-24 h-1 bg-brand-orange mx-auto rounded-full reveal-element delay-200"></div>
+    </div>
+  </header>
+
+  <section class="py-20 md:py-28 bg-white relative">
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+      
+      <div class="text-center mb-16 reveal-element">
+        <i class="ph-fill ph-quotes text-5xl text-brand-orange/20 mb-4 block"></i>
+        <p class="text-2xl md:text-3xl text-brand-black font-heading font-medium leading-relaxed">
+          "Acompañamos a empresas, emprendedores y familias en la toma de decisiones jurídicas estratégicas, con una mirada preventiva, clara y humana."
+        </p>
+      </div>
+
+      <div class="prose prose-lg text-gray-600 leading-loose text-justify md:text-left space-y-6 reveal-element delay-100">
+        <p>
+          Desde nuestros inicios entendimos que el Derecho no debe actuar sólo cuando el conflicto aparece, sino antes: 
+          <strong>ordenando, anticipando riesgos y brindando previsibilidad</strong> para que los proyectos puedan crecer de manera segura y sostenible.
+        </p>
+        <p>
+          Nuestra trayectoria se construyó a partir del trabajo profesional constante, la formación continua y el compromiso con cada cliente. 
+          Hoy el estudio atraviesa una etapa de evolución y consolidación, integrando nuevas formas de ejercicio profesional, tecnología y trabajo en red, 
+          sin perder la esencia que nos define: responsabilidad, honestidad y cercanía.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-28 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <header class="text-center mb-20 reveal-element">
+        <h2 class="text-4xl md:text-5xl font-heading text-brand-black font-bold mb-6">
+          Socias Fundadoras
+        </h2>
+        <div class="w-16 h-1 bg-brand-orange mx-auto mb-8"></div>
+        
+        <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+          El estudio Bossio & Monteresino fue fundado en agosto de 2017 por las Dras. María Florencia Bossio y María Victoria Monteresino, 
+          con el objetivo de brindar asesoramiento jurídico profesional y accesible en la región.
+        </p>
+        <p class="text-gray-500 max-w-3xl mx-auto text-sm mt-4 italic">
+          Desde sus comienzos, el estudio se caracteriza por el trabajo colaborativo con profesionales del Derecho en toda la provincia 
+          de Santa Fe y provincias limítrofes, lo que permite abordar cada caso con una mirada integral y especializada.
+        </p>
+      </header>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <article class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 card-hover reveal-element delay-100 flex flex-col items-center text-center relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gray-100 group-hover:bg-brand-orange transition-colors duration-500"></div>
+          
+          <div class="w-24 h-24 bg-brand-orange/10 rounded-full flex items-center justify-center mb-6 text-brand-orange text-4xl group-hover:scale-110 transition-transform">
+            <i class="ph-fill ph-user"></i>
+          </div>
+
+          <h3 class="text-2xl font-heading font-bold text-brand-black mb-2">
+            Dra. María Florencia Bossio
+          </h3>
+          <span class="inline-block px-3 py-1 bg-gray-100 text-xs font-bold uppercase tracking-widest text-brand-orange rounded-full mb-6">
+            Dirección y liderazgo del estudio
+          </span>
+
+          <p class="font-semibold text-gray-800 text-sm mb-6 pb-6 border-b border-gray-100 w-full">
+            Abogada, Martillera Pública y Profesora en Derecho.
+          </p>
+
+          <div class="text-gray-600 text-sm leading-relaxed space-y-4 text-left">
+            <p>Actualmente lidera la gestión integral del estudio, impulsando una práctica jurídica moderna, preventiva y estratégica, tanto en modalidad presencial como remota.</p>
+            <p>Su enfoque profesional se distingue por la claridad, la escucha activa y la búsqueda de soluciones jurídicas alineadas con la realidad de cada cliente. Integra herramientas de organización, análisis sistémico y acompañamiento estratégico, aportando una mirada innovadora al ejercicio tradicional del Derecho.</p>
+          </div>
+        </article>
+
+        <article class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 card-hover reveal-element delay-200 flex flex-col items-center text-center relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gray-100 group-hover:bg-brand-black transition-colors duration-500"></div>
+          
+          <div class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 text-brand-black text-4xl group-hover:scale-110 transition-transform">
+            <i class="ph-fill ph-user"></i>
+          </div>
+
+          <h3 class="text-2xl font-heading font-bold text-brand-black mb-2">
+            Dra. María Victoria Monteresino
+          </h3>
+          <span class="inline-block px-3 py-1 bg-gray-100 text-xs font-bold uppercase tracking-widest text-gray-600 rounded-full mb-6">
+            Co-fundadora – Visión institucional y trayectoria
+          </span>
+
+          <p class="font-semibold text-gray-800 text-sm mb-6 pb-6 border-b border-gray-100 w-full">
+            Abogada y Profesora en Derecho.
+          </p>
+
+          <div class="text-gray-600 text-sm leading-relaxed space-y-4 text-left">
+            <p>Cuenta con una sólida trayectoria profesional y docente, con una impronta orientada a la mediación, la prevención de conflictos y el acompañamiento responsable de las personas en procesos jurídicos complejos.</p>
+            <p>Actualmente continúa formando parte del estudio desde un rol institucional y estratégico, aportando su experiencia, valores profesionales y visión de largo plazo, acompañando la evolución del proyecto común.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-brand-black text-white py-12 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <h4 class="font-heading text-xl font-bold">Bossio & Monteresino</h4>
+        <p class="text-gray-500 text-xs mt-1 uppercase tracking-widest">Abogados Asociados</p>
+      </div>
+      <p class="text-gray-500 text-sm">
+        © 2026 Bossio & Monteresino. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5493476616820" target="_blank" class="fixed bottom-6 right-6 z-[60] w-14 h-14 bg-brand-orange text-white rounded-full flex items-center justify-center shadow-lg hover:bg-brand-black hover:-translate-y-1 transition-all duration-300 group">
+    <i class="ph-fill ph-whatsapp-logo text-3xl group-hover:scale-110 transition-transform"></i>
+  </a>
+
+  <script>
+    // Toggle Mobile Menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if(menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Scroll Animation Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal-element').forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>
